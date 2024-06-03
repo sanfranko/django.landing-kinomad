@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#Home #Kinomad #About{
+    transition: 2s ease;
+  }
+
+.title {
+    opacity: 0; /* Начальная прозрачность элемента */
+    animation: fadeInAnimation 10s ease forwards; /* Анимация появления с продолжительностью 1 секунда */
+}
+
+/* Ключевые кадры для анимации появления */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0; /* Начальная прозрачность элемента */
+    }
+    to {
+        opacity: 1; /* Конечная прозрачность элемента */
+    }
+}
+
+
+
+
+.navbar {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.navbar div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu {
+   margin-right: 180px;
+}
+
+
+.menu-item {
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 5px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.menu-item:hover {
+    color: #41A4DF;
+    border-bottom: 5px solid #41A4DF;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.11s;
+}
+
+.logo {
+    width: 325px;
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes logo {
+    0% {transform: rotateX(90deg);}
+    50% {transform: rotateX(-45deg);}
+    100% {transform: rotateX(0deg);}
+  }
+
+.button-menu {
+    color: #41A4DF;
+    background-color: #297EE21F;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.button-menu:hover {
+    cursor: pointer;
+    background-color: #41A4DF;
+    color: #fff;
+    transition: 0.11s;
+}
+
+.button-x {
+    color: #41A4DF;
+    background-color: #297EE21F;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.button-x:hover {
+    cursor: pointer;
+    background-color: #41A4DF;
+    color: #fff;
+    transition: 0.11s;
+}
+
+.button-alt {
+    color: #fff;
+    background-color: #41A4DF;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.button-alt:hover {
+    cursor: pointer;
+    background-color: #297EE21F;
+    color: #41A4DF;
+    transition: 0.11s;
+}
+
+.button-handler {
+    margin-top: 45px;
+}
+
+.mode {
+    width: 50px;
+    padding: 10px;
+    margin-right: -10px;
+}
+
+.mode:hover {
+    cursor: pointer;
+    background-color: #F7F9FB;
+    border-radius: 50px;
+    transition: 0.11s;
+    transform: rotate(45deg);
+}
+
+.space-maker {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.forlogo {
+    margin-top: 10px;
+}
+
+.space-maker div {
+    display: block;
+}
+
+.title {
+    font-size: 75px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.1;
+}
+
+.title-2 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.blue {
+    color: #41A4DF;
+}
+
+.sub-text {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.bot-reel {
+    margin-top: 110px;
+}
+
+.bot-pfp {
+    width: 110px;
+    border-style: solid;
+    border-radius: 100px;
+    border-color: #fff;
+    border-width: 5px;
+}
+
+.bot-pfp:hover {
+    transition: 0.11s;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.a-1, .a-2, .a-3, .a-4, .a-5, .a-6{
+    animation-name: circles;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.a-1 {animation-delay: 0.1s;}
+.a-2 {animation-delay: 0.2s;}
+.a-3 {animation-delay: 0.3s;}
+.a-4 {animation-delay: 0.4s;}
+.a-5 {animation-delay: 0.5s;}
+
+@keyframes circles {
+    0% {scale: 1.0;}
+    50% {scale: 1.1;}
+    100% {scale: 1.0;}
+  }
+
+
+.next {
+    margin-left: -35px;
+}
+
+.iphone {
+    width: 550px;
+    animation-name: phone;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes phone {
+    0% {transform: rotate(1deg); margin-bottom: 5px;}
+    100% {transform: rotate(0deg); margin-bottom: 0px;}
+  }
+
+.iphone-demo {
+    margin-top: -95px;
+    margin-left: 130px;
+}
+
+.dark-bg {
+    background-color: #232328;
+}
+
+.dark {
+    color: #232328;
+}
+
+.red {
+    color: rgb(255, 0, 0)
+}
+
+.white {
+    color: #fff;
+}
+
+.reel-space {
+    padding: 250px;
+    margin: -10px;
+}
+
+.reel-left {
+    margin-right: 150px;
+}
+
+.reel-img {
+    width: 600px;
+}
+
+.reel-img:hover {
+    transition: 0.11s;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.adjust-1 {
+    margin-top: 75px;
+}
+
+.card-1 {
+    background-color: #F7F9FB;
+    width: 75%;
+    padding: 50px;
+    border-radius: 40px;
+    margin-bottom: 50px;
+}
+
+.coin-handler {
+    display: inline-block;
+}
+
+
+.coin-handler {
+    text-align: center;
+}
+
+.block {
+    display: block;
+}
+
+.coin-ticker {
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #11111166;
+}
+
+.logos {
+    margin-top: 25px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+
+.png {
+    background-color: gray;
+}
+
+.img {
+    width: 190px;
+    height: 190px;
+    margin-left: 25px;
+    border-radius: 20%;
+}
+
+.img:hover {
+    transition: 0.11s;
+    scale: 1.1;
+    cursor: pointer;
+}
