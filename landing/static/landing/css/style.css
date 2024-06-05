@@ -141,6 +141,26 @@ a {
     margin-top: 45px;
 }
 
+.button-application {
+    color: #fff;
+    background-color: #41A4DF;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+}
+
+.button-application:hover {
+    cursor: pointer;
+    background-color: #297EE21F;
+    color: #41A4DF;
+    transition: 0.11s;
+}
+
 .mode {
     width: 50px;
     padding: 10px;
@@ -189,7 +209,6 @@ a {
 
 .sub-text {
     margin-top: 25px;
-    margin-bottom: 25px;
     font-size: 30px;
 }
 
@@ -341,4 +360,27 @@ a {
     transition: 0.11s;
     scale: 1.1;
     cursor: pointer;
+}
+
+.input {
+    width: 200px;
+    padding: 10px 15px;
+    border: 1px solid #E1E8ED;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    font-size: 25px;
+    color: #2C3E50;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    margin-right: 25px;
+}
+
+.input:focus {
+    border-color: #1C9DEB;
+    box-shadow: 0 0 5px rgba(28, 157, 235, 0.5);
+}
+
+.message {
+    width: 300px;
 }

@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,13 +60,13 @@
 
     <div  class="space-maker">
       <div id="About" class="card-1">
-        <div class="title-2"><span class="dark">About us</div>
+        <div class="title-2"><span class="dark">About us</span></div>
           <div class="sub-text">Private Team — A team, which includes students <span class="blue">(not everybody)</span> from Nomad College. Our goal is to educate students in the Internet sphere...</div>
       </div>
     </div>
     <div class="space-maker forlogo">
       <div class="card-1">
-          <div class="title-2"><span class="dark">Our logos</div>
+          <div class="title-2"><span class="dark">Our logos</span></div>
           <div class="logos">
             <span class="logos-box">
               <span><img class="img png" src="{% static 'landing/img/PTblackpng.png' %}" alt="pt"></span>
@@ -79,14 +78,35 @@
               <span><img class="img" src="{% static 'landing/img/PTjpg.jpg' %}" alt="pt"></span>
             </span>
             <span class="logos-box">
-              <span><img class="img" src="{% static 'landing/img/PTblackpng.png' %}" alt="pt"></span>
-            </span>
-            <span class="logos-box">
               <span><img class="img" src="{% static 'landing/img/PTblackjpg.jpg' %}" alt="pt"></span>
             </span>
             <span class="logos-box">
               <span><img class="img" src="{% static 'landing/img/PT+NCjpg.jpg' %}" alt="pt"></span>
             </span>
+            <span class="logos-box">
+              <span><img class="img" src="{% static 'landing/img/PT+NCblackjpg.jpg' %}" alt="pt"></span>
+            </span>
+          </div>
+      </div>
+    </div>
+    <div  class="space-maker">
+      <div id="form" class="card-1">
+        <div class="title-2"><span class="dark">Contact us</span></div>
+          <div class="form">
+            <form class="sub-text" action="/submit" method="POST">
+
+              <label class="sub-text" for="nickname">username:</label>
+              <input class="input"  type="text" id="nickname" name="nickname" placeholder="Alex" required>
+
+              <label class="sub-text" for="email">email:</label>
+              <input class="input" type="email" id="email" name="email" placeholder="alex@proton.me" required>
+
+              <label class="sub-text" for="message">message:</label>
+              <input class="input message" type="text" id="message" name="message" placeholder="I have an idea..." required>
+
+              <button class="button-application" type="submit">Submit</button>
+            </form>
+            <div class="sub-text">We will definitely contact you. <b>Private Team ❤</b></div>
           </div>
       </div>
     </div>
