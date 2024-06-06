@@ -95,8 +95,8 @@
           <div class="form">
             <form class="sub-text" action="{% url 'index' %}" method="POST">
               {% csrf_token %}
-              <label class="sub-text" for="nickname">username:</label>
-              <input class="input"  type="text" id="nickname" name="nickname" placeholder="Alex" required>
+              <label class="sub-text" for="name">username:</label>
+              <input class="input"  type="text" id="name" name="name" placeholder="Alex" required>
 
               <label class="sub-text" for="email">email:</label>
               <input class="input" type="email" id="email" name="email" placeholder="alex@proton.me" required>

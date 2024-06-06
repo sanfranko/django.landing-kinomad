@@ -8,12 +8,12 @@ def index(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
 
-        full_message = f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
+        full_message = f"Имя: {name}\nПочта: {email}\n\nСобщение:\n{message}"
 
         try:
             send_mail(
-                f'Message from {name}',
-                message,
+                f'Новая заявка от {name}',
+                full_message,
                 settings.EMAIL_HOST_USER,
                 [settings.ADMIN_EMAIL, 'sanfrankooo3@gmail.com'],
                 fail_silently=False,
