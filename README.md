@@ -10,4 +10,4 @@
 ### [Посетить](https://sanfranko.github.io/landing-kinomad/)
 
 
-![Landing ico](https://github.com/sanfranko/django.landing-kinomad/assets/100057117/15a4c2a6-6b2b-462c-842b-5218bf9be17c)
+![Landing ico](https://github.com/sanfranko/django.landing-kinomad/assets/100057117/876fcf14-1d8f-4fd7-a055-b5df4517ab61)
