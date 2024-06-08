@@ -8,7 +8,7 @@ def index(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
 
-        full_message = f"Имя: {name}\nПочта: {email}\n\nСобщение:\n{message}"
+        full_message = f"Имя: {name}\nПочта: {email}\n\nСообщение:\n{message}"
 
         try:
             send_mail(
